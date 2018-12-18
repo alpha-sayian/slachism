@@ -8,7 +8,7 @@
 #### VI ⋅⋅⋅ Nie składaj oszczerstw
 #### VII ⋅⋅ Nie kradnij
 #### VIII ⋅ Nie torturuj
-#### IX ⋅⋅⋅ Nie oszukuj⋅osób
+#### IX ⋅⋅⋅ Nie oszukuj osób
 #### X ⋅⋅⋅⋅ Nie stosuj przemocy wobec osób
 
 ```scheme
