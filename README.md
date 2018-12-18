@@ -10,5 +10,11 @@
 #### VIII - Nie torturuj
 #### IX   - Nie oszukuj osób
 #### X    - Nie stosuj przemocy wobec osób
-- `jeśli nie chcesz`: `aby osoba odeszła`
-- `jeśli nie chcesz`: `aby uwolnić siebie`
+
+```scheme
+(jeśli (nie (chcesz (aby "osoba odeszła" ))))
+```
+
+```scheme
+(jeśli (nie (chcesz (aby "uwolnić siebie" ))))
+```
