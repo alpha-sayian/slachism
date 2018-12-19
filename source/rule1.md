@@ -1,1 +1,4 @@
-# Rule 1
+:orphan:
+
+# I Nie zabijaj
+> * osoba, która podżegała do zabójstwa usiłowała zabić;
