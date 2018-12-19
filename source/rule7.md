@@ -1,1 +1,2 @@
-# Rule 7
+#  Nie kradnij
+> * ponieważ trzeba oddać;
