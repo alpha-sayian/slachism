@@ -4,9 +4,9 @@
 <defs>
 </defs>
 <path d="M0,0 l-128.0,-222 l256,0 Z" stroke-width="1" stroke="black" fill="black" fill-opacity="1.0" />
-<path d="M0,0 l-128.0,222 l256,0 Z" stroke-width="1" stroke="black" fill="black" fill-opacity="1.0" />
+<path d="M0,0 l-128.0,222 l256,0 Z" stroke-width="1" stroke="black" fill="black" fill-opacity="0.0" />
 <path d="M0,0 l-256,0 l128.0,-222 Z" stroke-width="1" stroke="black" fill="black" fill-opacity="0.0" />
-<path d="M0,0 l-256,0 l128.0,222 Z" stroke-width="1" stroke="black" fill="black" fill-opacity="0.0" />
+<path d="M0,0 l-256,0 l128.0,222 Z" stroke-width="1" stroke="black" fill="black" fill-opacity="1.0" />
 <path d="M0,0 l256,0 l-128.0,-222 Z" stroke-width="1" stroke="black" fill="black" fill-opacity="0.0" />
-<path d="M0,0 l256,0 l-128.0,222 Z" stroke-width="1" stroke="black" fill="black" fill-opacity="0.0" />
+<path d="M0,0 l256,0 l-128.0,222 Z" stroke-width="1" stroke="black" fill="black" fill-opacity="1.0" />
 </svg>
