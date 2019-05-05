@@ -1,6 +1,6 @@
 # slachism - The way of Slach
 
-#### I ⋅ Nie zabijaj
+#### I ⋅ Nie zabijaj osób
 #### II ⋅ Nie gwałć
 #### III ⋅ Nie zdradzaj w związkach małżeńskich
 #### IV ⋅ Nie zdradzaj w związkach partnerskich
@@ -11,10 +11,14 @@
 #### IX ⋅ Nie oszukuj osób
 #### X ⋅ Nie stosuj przemocy wobec osób
 
-```scheme
+```
 (jeśli (nie (chcesz (aby "osoba odeszła" ))))
 ```
 
-```scheme
+```
 (jeśli (nie (chcesz (aby "uwolnić siebie" ))))
+```
+
+```
+(jeśli (nie (jest "stan wojny")))
 ```
