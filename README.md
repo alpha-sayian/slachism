@@ -1,4 +1,4 @@
-# slachism - The way of Slach
+# slachism - droga Slach
 
 #### I ⋅ Nie zabijaj osób
 #### II ⋅ Nie gwałć
