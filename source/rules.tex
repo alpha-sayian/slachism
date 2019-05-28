@@ -1,0 +1,160 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Document Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[10pt]{article}
+
+\usepackage{calc}
+\usepackage[english,polish]{babel}
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+\usepackage{enumerate}
+\usepackage{etoolbox}
+
+
+\makeatletter
+\newlength{\bibhang}
+\setlength{\bibhang}{1em}
+\newlength{\bibsep}
+ {\@listi \global\bibsep\itemsep \global\advance\bibsep by\parsep}
+\newenvironment{bibsection}
+        {\vspace{-\baselineskip}\begin{list}{}{
+       \setlength{\leftmargin}{\bibhang}
+       \setlength{\itemindent}{-\leftmargin}
+       \setlength{\itemsep}{\bibsep}
+       \setlength{\parsep}{\z@}
+        \setlength{\partopsep}{0pt}
+        \setlength{\topsep}{0pt}}}
+        {\end{list}\vspace{-.6\baselineskip}}
+\makeatother
+
+\makeatletter
+\preto{\@verbatim}{\topsep=0pt \partopsep=0pt }
+\makeatother
+
+\reversemarginpar % Layout: Puts the section titles on left side of page
+
+\usepackage[paper=a4paper, marginparwidth=30.5mm, marginparsep=1.5mm, margin=25mm, includemp]{geometry}
+
+\setlength{\parindent}{0in}
+
+\usepackage{paralist}
+
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancy}
+\fancyhf{}\renewcommand{\headrulewidth}{0pt}
+\fancyfootoffset{\marginparsep+\marginparwidth}
+\newlength{\footpageshift}
+\setlength{\footpageshift}{0.5\textwidth+0.5\marginparsep+0.5\marginparwidth-2in}
+\lfoot{\hspace{\footpageshift} \parbox{4in}{\, \hfill Page \arabic{page} of \protect\pageref*{LastPage} \hfill \,}}
+
+\usepackage{color,hyperref}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+\hypersetup{colorlinks,breaklinks, linkcolor=darkblue,urlcolor=darkblue, anchorcolor=darkblue,citecolor=darkblue}
+
+%%%%%%%%%%%%%%%%%%%%%%%% End Document Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Helper Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\makeheading}[1]%
+        {\hspace*{-\marginparsep minus \marginparwidth}%
+         \begin{minipage}[t]{\textwidth+\marginparwidth+\marginparsep}%
+                {\large \bfseries #1}\\[-0.15\baselineskip]%
+                 \rule{\columnwidth}{1pt}%
+         \end{minipage}}
+
+\renewcommand{\section}[2]%
+        {\pagebreak[3]\vspace{1.3\baselineskip}%
+         \phantomsection\addcontentsline{toc}{section}{#1}%
+         \hspace{0in}%
+         \marginpar{
+         \raggedright \scshape #1}#2}
+
+\newenvironment{outerlist}[1][\enskip\textbullet]%
+        {\begin{itemize}[#1]}{\end{itemize}%
+         \vspace{-.6\baselineskip}}
+
+\newenvironment{lonelist}[1][\enskip\textbullet]%
+        {\vspace{-\baselineskip}\begin{list}{#1}{%
+        \setlength{\partopsep}{0pt}%
+        \setlength{\topsep}{0pt}}}
+        {\end{list}\vspace{-.6\baselineskip}}
+
+\newenvironment{innerlist}[1][\enskip\textbullet]%
+        {\begin{compactitem}[#1]}{\end{compactitem}}
+
+\newenvironment{loneinnerlist}[1][\enskip\textbullet]%
+        {\vspace{-\baselineskip}\begin{compactitem}[#1]}
+        {\end{compactitem}\vspace{-.6\baselineskip}}
+
+\newcommand{\blankline}{\quad\pagebreak[2]}
+
+\newcommand\doilink[1]{\href{http://dx.doi.org/#1}{#1}}
+\newcommand\doi[1]{doi:\doilink{#1}}
+
+\providecommand*\url[1]{\href{#1}{#1}}
+\renewcommand*\url[1]{\href{#1}{\texttt{#1}}}
+
+\providecommand*\email[1]{\href{mailto:#1}{#1}}
+
+\renewcommand{\thefootnote}{*}
+
+%%%%%%%%%%%%%%%%%%%%%%%% End Helper Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\makeheading{SLACHISM \hfill \href{http://www.slach.eu}{\textit{slach.eu}}}
+
+\section{Zasady}
+\begin{enumerate}[I\hspace*{\fill}]
+\item \textbf{Nie zabijaj osób}
+\item \textbf{Nie gwałć}
+\item \textbf{Nie zdradzaj w związkach małżeńskich}
+\item \textbf{Nie zhttps://www.overleaf.com/project/5cec7122a3cedb476acd5519dradzaj w związkach partnerskhttps://www.overleaf.com/project/5cec7122a3cedb476acd5519ich}
+\item \textbf{Nie kłam}
+\item \textbf{Nie składaj oszczerstw}
+\item \textbf{Nie kradnij}
+\item \textbf{Nie torturuj}
+\item \textbf{Nie oszukuj osób}
+\item \textbf{Nie stosuj przemocy wobec osób \\
+a) (jeśli (nie (chcesz (aby \textit{,,osoba odeszła"})))) \\
+b) (jeśli (nie (chcesz (aby \textit{,,uwolnić siebie"})))) \\
+c) (jeśli (nie (jest \textit{,,stan wojny"}))) 
+}
+\end{enumerate}
+
+\section{Repozytorium}
+\doilink{https://github.com/sebastianlach/slachism.git}
+
+\section{Klucz publiczny}
+\footnotesize\begin{verbatim}----BEGIN PGP PUBLIC KEY BLOCK-----
+
+mQENBFvsC6QBCAC4Lwm1WXIiptS5j0UcCkWr1UFjZUW1foWaC35+ThA1GaCeRA1a
+ecF5tDDF6YRrIG89Qth90GPfkA0utqsn1AzpyQCPBUtF6Hdavky3z3TAkpb7mLUL
+eWOjWuTAMUs5uxOPdG32du7HZfHHnnMQv9644yqrbfR6NYH2f22eY5Enqkm7r8b4
+rbRWYH6BX/xvQDILLH61W57aU1+7n4HLCidicVuvS1kuOVVLKinA2js2C4GBFrGK
+1o6nqDeSC6bMv/dpTU2uK9XMWsbOqpvOXDH5q/+vRped1AoJ2jx2bIYiKXzNwWhU
+S5yyx3DPdXBICQG2s2JHhP5hkVh0Pl2IVj5FABEBAAG0H1NlYmFzdGlhbiDFgWFj
+aCA8cm9vdEBzbGFjaC5ldT6JAVQEEwEIAD4WIQTDQbwNmrnb/mZcgWjkHUcJe9/o
+aQUCW+wLpAIbAwUJA8JnAAULCQgHAgYVCgkICwIEFgIDAQIeAQIXgAAKCRDkHUcJ
+e9/oaSQBCACp34WClw+35EaG5oBlV1gCbP9IM/oo4bxMcc0KX/iwmBweFzVocqI4
+rwgUF2nhdK0PASuTBraxaw1heHx9Mz3qjSU4BwYXGip1XrKTIq2XKlqynwWKdNlE
+EhqK7YPYgg+075LFIOSGzuJfttqZCaRVnmATDC+jA9Cv5lvfdGYa6+azBmub7zkl
+qiEiRSfzAfl8VVA1SzBrZM/4hBz1SRSAO+iv7YtUcdcSumDq9WJpPbpSzxQJpomG
+u6Iqb4UiZUPnYdQr2EiT9Bzu//VBI7EGjkCw/EpUY7+Iaf+CKQQMhFpw9B4vdERL
+7OSIGNM7eG4vMCSgpKj+ouU42dPtlnmauQENBFvsC6QBCADR47nU8ocqRKAfyh78
+jN0w6aTI6O1YO7aTT5wezMMxoidZp5ULqE/cPRb4iahXkpY4VlckRB+bl9BiD+QJ
+GJL1OS39t3H3DHm9fDJxEkYjuZbXktrry327tPOtl4+PXvCYbj6SyKW7mJjZlXYE
+YKK2HI0RwkR+ndFQBNWpICksT/ZKeFIVrv9ZgAY7n+AO2Le8jpHyemRl4YXOgOmO
+6zq41KuGJ9eytehszhVU+x4wtcB9JaPPvp1ep+RqZUNMCbgR6P9WKRB9Qb6bZ+8i
+GG1dpAbPSlEukq4RWv3sH+1Tv5Phn0asZ2hBLR8iLWuoIA/fB1LHn7ilCd8yyUZi
+YUjPABEBAAGJATwEGAEIACYWIQTDQbwNmrnb/mZcgWjkHUcJe9/oaQUCW+wLpAIb
+DAUJA8JnAAAKCRDkHUcJe9/oaZ95CACbW1C++J7+YrpyYtQIFZEuBTiUfFvmDM4e
+byxKotXvJIu6g14CHkCgtqyY5S50Mdk/2FRUAHYPgZzbn34An5SqMqU2JZ/YdPkP
+xlNrk356JXYLiMVc52N4uS1dRi5h6qkafJBzzw9v+WJN/MPmu06hjY+NFeILzVU1
+7q4g0fowz8ezUs3iYDI5nxJZROrIVLwpOy3da+WYPP51o8yK7hsaafSDSWNbwqKM
+x+ndrLMPkHbmXMQdM36Hxkr2CUThfTMTNV2kDcPfMp+YLfQvyQ7cs6gI8ZH+9zU2
+If62CRPoRCYhVRP+UMrGtD0eVhymXOZMRbM9+SAWWigJUCNvh5Qq
+=Y2Lr
+-----END PGP PUBLIC KEY BLOCK-----
+\end{verbatim}
+
+\end{document}
