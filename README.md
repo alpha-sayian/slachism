@@ -1,5 +1,8 @@
-# slachism - droga Slach
+# slachism to wyznanie
+* to droga osoby imieniem Slach
+* to podjeście do procesu życia, śmierci i egzystencji 
 
+## zasady
 #### I ⋅ Nie zabijaj osób
 #### II ⋅ Nie gwałć
 #### III ⋅ Nie zdradzaj w związkach małżeńskich
